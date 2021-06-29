@@ -26,16 +26,16 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    var questions = [
-      {
+    var questions = <Map<String, dynamic>>[
+      <String, dynamic>{
         'questionText': 'What\'s your favourite color?',
         'answers': ['Blue', 'Black', 'Red', 'White'],
       },
-      {
+      <String, dynamic>{
         'questionText': 'What\'s your favourite animal?',
         'answers': ['Lion', 'Dog', 'Cat', 'Wolf'],
       },
-      {
+      <String, dynamic>{
         'questionText': 'Who\'s your favourite instructor?',
         'answers': ['Max', 'Tom', 'Silus', 'John'],
       },
