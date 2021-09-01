@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class Result extends StatelessWidget {
   final int resultScore;
-  final void Function() resetHanlder;
+  final VoidCallback resetHanlder;
 
   Result(this.resultScore, this.resetHanlder);
 
@@ -27,12 +27,14 @@ class Result extends StatelessWidget {
       margin: EdgeInsets.all(10),
       child: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               resultPhrase,
               style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
+            SizedBox(height: 60,),
             TextButton(
               child: Text('Restart Quiz!'),
               style: TextButton.styleFrom(primary: Colors.blue),
